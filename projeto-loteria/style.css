@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+}
+
+.corpo-do-site{
+    background-color: blueviolet;
+}
+
+.cabecalho{
+    text-align: center;
+    padding-top: 10px;
+    background-color: rgb(210, 210, 250);
+    height: 100px;
+}
+
+h1{
+    margin-top: 25px;
+}
+
+h2{
+    color: white;
+}
+
+.sessao-principal{
+    background-color: coral;
+}
+
+.containers{
+    display: inline-block;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-left: 250px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.rodape{
+    margin-top: 784px;
+    background-color: rgb(210, 210, 250);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;    
+}
+
