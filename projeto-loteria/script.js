@@ -8,3 +8,4 @@ function sorteioDaMegaSena (){
 }
 
 let minhaCartela = [12, 21, 36, 39, 74, 59];
+
