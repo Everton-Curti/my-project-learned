@@ -1,3 +1,45 @@
+//Estrutura da Página:
+let criarClasse = document.querySelector('body');
+criarClasse.className = 'corpo-do-site';
+
+let criarClasseMain = document.querySelector('main');
+criarClasseMain.className = 'principal';
+
+let capturarHeader = document.querySelector('header');
+capturarHeader.className = 'cabecalho';
+let criarHum = document.createElement('h1');
+criarHum.innerHTML = 'Resultado da Mega Sena! Good Luck!!';
+capturarHeader.appendChild(criarHum);
+
+let capturarSection = document.querySelector('section');
+capturarSection.className = 'sessao-principal';
+
+let criarDivNaSectionPrincipal = 3;
+for (let index = 1; index <= criarDivNaSectionPrincipal; index += 1){
+    let criarDiv = document.createElement('div');
+    criarDiv.className = 'containers';
+    capturarSection.appendChild(criarDiv);
+    let criarHDois = document.createElement('h2');
+    criarHDois.className = 'h-dois-' + index;
+    criarDiv.appendChild(criarHDois);
+}
+
+let tituloHDoisUm = document.querySelector('.h-dois-1')
+tituloHDoisUm.innerHTML = 'Numeros Soteados!!!';
+let tituloHDoisDois = document.querySelector('.h-dois-2')
+tituloHDoisDois.innerHTML = 'Quantidade de Acerto!!!';
+let tituloHDoisTres= document.querySelector('.h-dois-3')
+tituloHDoisTres.innerHTML = 'Meu Jogo!!!';
+
+let capturarMain = document.querySelector('.principal');
+let criarRodape = document.createElement('footer');
+criarRodape.className = 'rodape';
+criarRodape.innerHTML = '&copy Página Escrita por Everton Curti. Todos os Direitos Reservados.';
+capturarMain.appendChild(criarRodape);
+
+
+
+
 function gerarNumerosRandomicos() {
     let numerosRandomicos = Math.floor(Math.random() * 60) + 1;
     return numerosRandomicos;
