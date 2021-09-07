@@ -6,4 +6,5 @@ function sorteioDaMegaSena (){
     }    
     return arrayNumerosSorteados;
 }
-console.log(sorteioDaMegaSena());
+
+let minhaCartela = [12, 21, 36, 39, 74, 59];
