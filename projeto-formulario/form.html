@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Formulario</title>
+</head>
+<body>
+    <header class="container text-center">
+        <h1 class="display-1">Formulário Para Currículo</h1>
+        <h3 class="display-3"><em>Preencha Abaixo Suas Informações</em></h3>
+    </header>
+
+    <form class="container" action="#" method="GET" enctype="multipart/form-data">
+
+        <div class="container">
+
+            <h2 class="display-6">Dados Pessoais</h2>
+
+            <div class="container">
+                <label class="form-label" for="nome">Nome:</label>
+                <input class="form-control" type="text" name="nome" id="nome" maxlength="100" required>
+            </div>
+
+            <div class="container"> 
+                <label class="form-label" for="endereco">Endereço Completo:</label>
+                <input class="form-control" type="text" name="endereco" id="endereco" maxlength="150" required>
+            </div>
+
+            <div class="container"> 
+                <label class="form-label" for="email">Email:</label>
+                <input class="form-control" type="email" name="email" id="email" maxlength="150" required>
+            </div>
+
+            <div class="container">
+                <label class="form-label" for="cidade">Cidade:</label>
+                <input class="form-control" type="text" name="cidade" id="cidade" maxlength="50" required>
+            </div>
+
+            <div class="container">
+                <label class="form-label" for="bairro">Bairro:</label>
+                <input class="form-control" type="text" name="bairro" id="bairro" maxlength="50" required>
+            </div>
+
+            <div class="container">
+                <label class="form-label" for="estado">Estado:</label>
+                <select class="form-select" name="estado" id="estado"></select>
+            </div>
+
+            <div class="container">
+                <div class="form-check">
+                    <label class="form-check-label" for="casa">Casa</label>
+                    <input class="form-check-input" type="radio" name="moradia" id="casa" required>
+                </div>                
+                <div class="form-check">
+                    <label class="form-check-label" for="apt">Apartamento</label>
+                    <input class="form-check-input" type="radio" name="moradia" id="apt" required>
+                </div>
+            </div>         
+
+            <h2 class="display-6">Dados Profissionais</h2>
+
+            <div class="container">
+                <label class="form-label" for="ultima-empresa">Ultima Empresa que Trabalhou:</label>
+                <input class="form-control" type="text" name="ultima-empresa" id="ultima-empresa" maxlength="100" required>
+            </div>
+
+            <div class="container"> 
+                <label class="form-label" for="cargo">Cargo:</label>
+                <input class="form-control" type="text" name="cargo" id="cargo" maxlength="150" required>
+            </div>
+
+            <div class="container"> 
+                <textarea class="form-control" name="atribuicoes" id="atribuicoes" cols="30" rows="10" placeholder="Digite suas Atribuições" maxlength="1000" required></textarea>
+            </div>
+
+            <div class="container">
+                <div class="mb-3">
+                    <label class="form-label" for="arquivo">Insira Seu curriculo em formato PDF.</label>
+                    <input class="form-control" type="file" name="arquivo">                
+                </div>
+            </div>  
+
+            <div class="container">
+                <div class="form-check"> 
+                    <input class="form-check-input" type="checkbox" name="valida" value="valida" required> 
+                    <label class="form-check-label" for="valida">Declaro Que Todas As Informações Passadas São Válidas!</label>
+                </div>
+            </div>            
+            
+            <div class="container">
+                <button class="btn btn-success" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal" id="funcao-modal">Enviar Curriculo</button>
+
+                <button class="btn btn-danger" type="reset">Resetar Dados</button>
+            </div>
+
+        </div>
+
+    </form>
+
+    <!-- ------------------------------------------------------------- -->
+
+    <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Enviar Currículo</h5>
+          <button type="submit" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Deseja enviar o currículo agora?
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+          <button type="submit" class="btn btn-success">Sim</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
