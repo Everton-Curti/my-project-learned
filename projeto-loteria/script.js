@@ -18,17 +18,18 @@ let criarDivNaSectionPrincipal = 3;
 for (let index = 1; index <= criarDivNaSectionPrincipal; index += 1){
     let criarDiv = document.createElement('div');
     criarDiv.className = 'containers';
+    criarDiv.id = 'add-funcao-' + index;    
     capturarSection.appendChild(criarDiv);
     let criarHDois = document.createElement('h2');
     criarHDois.className = 'h-dois-' + index;
     criarDiv.appendChild(criarHDois);
 }
 
-let tituloHDoisUm = document.querySelector('.h-dois-1')
+let tituloHDoisUm = document.querySelector('.h-dois-1');
 tituloHDoisUm.innerHTML = 'Numeros Soteados!!!';
-let tituloHDoisDois = document.querySelector('.h-dois-2')
+let tituloHDoisDois = document.querySelector('.h-dois-2');
 tituloHDoisDois.innerHTML = 'Quantidade de Acerto!!!';
-let tituloHDoisTres= document.querySelector('.h-dois-3')
+let tituloHDoisTres= document.querySelector('.h-dois-3');
 tituloHDoisTres.innerHTML = 'Meu Jogo!!!';
 
 let capturarMain = document.querySelector('.principal');
@@ -36,9 +37,6 @@ let criarRodape = document.createElement('footer');
 criarRodape.className = 'rodape';
 criarRodape.innerHTML = '&copy Página Escrita por Everton Curti. Todos os Direitos Reservados.';
 capturarMain.appendChild(criarRodape);
-
-
-
 
 function gerarNumerosRandomicos() {
     let numerosRandomicos = Math.floor(Math.random() * 60) + 1;
@@ -67,12 +65,32 @@ function checarJogo(resultado, jogo){
     return contarAcertos;
 }
 
+//let testeSurpresinha = sortearMegaSena();
+
 // //Essa parte e apenas para testar o codigo
 
-// let sorteioMegaSena = sortearMegaSena();
-// let minhaCartela = [12, 21, 36, 39, 54, 59];
+let sorteioMegaSena = sortearMegaSena();
+let minhaCartela = [12, 21, 36, 39, 54, 59];
 
-// let testeSurpresinha = sortearMegaSena();
+let divNumeroSorteado = document.querySelector('#add-funcao-1');
+let criarDivNumerosSorteados = document.createElement('div');
+criarDivNumerosSorteados.innerHTML = sortearMegaSena();
+divNumeroSorteado.appendChild(criarDivNumerosSorteados);
+
+let divQuantidadeDeAcertos = document.querySelector('#add-funcao-2');
+let criarDivQuantidadeDeAcertos = document.createElement('div');
+criarDivQuantidadeDeAcertos.innerHTML = checarJogo(sorteioMegaSena, minhaCartela);
+divQuantidadeDeAcertos.appendChild(criarDivQuantidadeDeAcertos);
+
+let divMeuJogo = document.querySelector('#add-funcao-3');
+let criarMeuJogo = document.createElement('div');
+criarMeuJogo.innerHTML = minhaCartela;
+divMeuJogo.appendChild(criarMeuJogo);
+
+
+
+
+
 
 
 // console.log("Jogo Sorteado: " + sorteioMegaSena);
