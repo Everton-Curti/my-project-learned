@@ -107,7 +107,7 @@ a:hover{
 }
 
 .info-hotel .grade img{
-    height: 650px;
+    height: 450px;
     padding: 20px;
     object-fit: cover;
     width: 100px;
@@ -119,6 +119,55 @@ img.small{
 
 img.large{
     flex-basis: 60%;
+}
+
+.demonstracao{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 50px;
+    align-items: center;
+    text-align: center;
+    background-color: #191c03;
+    color: white;
+}
+
+.demonstracao h3{
+    font-size: 2em;
+    margin-bottom: 35px;
+}
+
+.demonstracao p{
+    max-width: 800px;
+    margin-bottom: 35px;
+}
+
+.demonstracao hr{
+    width: 200px;
+    height: 3px;
+    margin-bottom: 35px;
+    background-color: white;
+}
+
+.demonstracao .grid{
+    display: flex;
+}
+
+.demonstracao .grid li{
+    list-style: none;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.demonstracao .grid li i{
+    color: #c3c63b;
+    font-size: 3.5em;
+    margin-bottom: 30px;    
+}
+
+.demonstracao .grid li h4{
+    font-size: 1.5em;
+    color: #c3c63b;
+    margin-bottom: 20px;
 }
 
 
