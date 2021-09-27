@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 header{    
@@ -59,7 +60,8 @@ a:hover{
     border: solid 2px none;
     padding: 20px 50px;
     background-color: #191c03;
-    color: white;    
+    color: white;
+    font-weight: 600;    
     text-decoration: none;
     border-radius: 5px;
     opacity: 0.7;
@@ -69,6 +71,105 @@ a:hover{
 .botao:hover{
     font-weight: 1000;
 }
+
+.info-hotel{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.info-hotel h3{
+    font-size: 2em;
+    margin-bottom: 35px;
+    color: #191c03;
+}
+
+.info-hotel p{
+    max-width: 800px;
+    margin-bottom: 35px;
+    text-align: center;
+    color: #191c03;
+}
+
+.info-hotel hr{
+    width: 200px;
+    height: 3px;
+    margin-bottom: 70px;
+    background-color: #191c03;
+}
+
+.info-hotel .grade{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.info-hotel .grade img{
+    height: 450px;
+    padding: 20px;
+    object-fit: cover;
+    width: 100px;
+}
+
+img.small{
+    flex-basis: 40%;
+}
+
+img.large{
+    flex-basis: 60%;
+}
+
+.demonstracao{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 50px;
+    align-items: center;
+    text-align: center;
+    background-color: #191c03;
+    color: white;
+}
+
+.demonstracao h3{
+    font-size: 2em;
+    margin-bottom: 35px;
+}
+
+.demonstracao p{
+    max-width: 800px;
+    margin-bottom: 35px;
+}
+
+.demonstracao hr{
+    width: 200px;
+    height: 3px;
+    margin-bottom: 35px;
+    background-color: white;
+}
+
+.demonstracao .grid{
+    display: flex;
+}
+
+.demonstracao .grid li{
+    list-style: none;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.demonstracao .grid li i{
+    color: #c3c63b;
+    font-size: 3.5em;
+    margin-bottom: 30px;    
+}
+
+.demonstracao .grid li h4{
+    font-size: 1.5em;
+    color: #c3c63b;
+    margin-bottom: 20px;
+}
+
 
 
 
