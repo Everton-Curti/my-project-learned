@@ -227,12 +227,16 @@ img.large{
     cursor: pointer;
 }
 
+.noticias form button:hover{
+    font-weight: 1000;
+}
+
 .rodape footer{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 50px 0;
-    background-color: #191c03;
+    background-color: #191c03;    
 }
 
 .rodape footer ul{
@@ -253,6 +257,50 @@ footer ul li a i{
 footer p{
     color: #c3c63b;
     text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    header{
+        position: absolute; 
+        justify-content: center;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .fundo h1{
+        font-size: 1.5em;
+    }
+
+    .fundo h2{
+        font-size: 1.5em;
+    }
+
+    img.small{
+        flex-basis: 100%;
+    }
+
+    img.large{
+        flex-basis: 100%;
+    }
+
+    .demonstracao ul {
+        flex-direction: column;
+    }    
+
+    .noticias form{
+        justify-content: column;
+    }
+
+    .noticias form input{
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    footer ul li a i{
+        font-size: 50px;        
+    }
 }
 
 
